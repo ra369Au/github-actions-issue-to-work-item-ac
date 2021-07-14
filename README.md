@@ -49,7 +49,7 @@ jobs:
   alert:
     runs-on: self-hosted
     steps:
-      - uses: synced-actions/github-actions-issue-sync@main
+      - uses: synced-actions/github-actions-issue-to-work-item-ac@main
         env:
           ado_token: "${{ secrets.ADO_PERSONAL_ACCESS_TOKEN }}"
           github_token: "${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}"
